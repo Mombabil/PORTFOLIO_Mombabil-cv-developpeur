@@ -1,0 +1,139 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #f7faff !important;
+}
+h2,h3{
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+h2{
+    text-transform: uppercase;
+    margin-top: 100px !important;
+    color: #212529;
+    font-size: 3em !important;
+}
+h3, h4{
+    color: #7d7d7d;
+}
+
+/* *******HEADER******* */
+.navbar{
+    height: 45px;
+    transition: 0.7s;
+}
+.navbar-nav{
+    width: 80% !important;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.active{
+    border-bottom: 4px solid #a62609;
+}
+
+header{
+    height: 100vh;
+    background: url(media/fond.png) no-repeat fixed 50% 50%;
+    background-size: cover;
+}
+header .infos, header .photo{
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    border: 3px solid #cacfc3;
+    border-radius: 3px;
+}
+header .photo{
+    right: 50px;
+    top: 90px;
+}
+header .infos{
+    right: 320px;
+    top: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+header .infos h5{
+    padding-left: 20px;
+    color: #cacfc3;
+}
+header .photo img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    margin: auto;
+    max-width: 90%;
+    border-radius: 3px;
+    box-shadow: 0 0 4px #111;
+}
+header .button{
+    position: absolute;
+    bottom: 200px;
+    left: 50%;
+    height: 60px;
+    border-radius: 30px;
+    border: 2px solid #cacfc3;
+}
+header .button a{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+/* Animation de la flèche de défilement */
+@keyframes down{
+	0% {position:relative; top:-3px; opacity: 0}
+	50% {position:relative; top:3px; opacity: 0.5}
+	100% {position:relative; top:9px; opacity: 1}
+}
+header .button a i{
+    font-size: 3em;
+    color: #cacfc3;
+    height: 10px;
+    animation: down 1s infinite linear alternate;
+}
+
+/* ******** COMPETENCES *********** */
+.line{
+    border: 4px solid #a62609;
+    width: 100px !important;
+    margin: auto;
+    margin-top: 20px !important;
+}
+.level{
+    margin-top: 60px !important;
+}
+.graph{
+    text-align: right;
+}
+.dev, .graph{
+    padding-top: 40px !important;
+}
+.note{
+    font-size: 1.5em;
+    color: #7d7d7d;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+.note a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #212529;
+}
+.note a:hover{
+    color: #a62609;
+}
+.transition-competence{
+    height: 33vh;
+    background: url(media/transition-competences.jpg) no-repeat fixed 50% 50%;
+    background-size: cover;
+}
